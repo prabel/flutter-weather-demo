@@ -1,0 +1,8 @@
+environment_config:
+  path: app/environment_config.dart
+
+  fields:
+    host:
+      default: https://api.openweathermap.org/data/2.5/
+    weather_api_key:
+      default: TODO

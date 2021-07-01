@@ -1,0 +1,100 @@
+import 'dart:convert';
+
+import 'package:weeath_app_demo/features/weather/data/models/current_weather_response.dart';
+
+CurrentWeatherResponse mockedWeatherResponseForPoznan = CurrentWeatherResponse.fromJson(jsonDecode('''
+{
+   "coord":{
+      "lon":16.9299,
+      "lat":52.4069
+   },
+   "weather":[
+      {
+         "id":801,
+         "main":"Clouds",
+         "description":"few clouds",
+         "icon":"02n"
+      }
+   ],
+   "base":"stations",
+   "main":{
+      "temp":292.34,
+      "feels_like":291.96,
+      "temp_min":291.59,
+      "temp_max":293.31,
+      "pressure":1005,
+      "humidity":63
+   },
+   "visibility":10000,
+   "wind":{
+      "speed":0.89,
+      "deg":212,
+      "gust":5.36
+   },
+   "clouds":{
+      "all":20
+   },
+   "dt":1625080996,
+   "sys":{
+      "type":2,
+      "id":19661,
+      "country":"PL",
+      "sunrise":1625020415,
+      "sunset":1625080682
+   },
+   "timezone":7200,
+   "id":3088171,
+   "name":"Poznań",
+   "cod":200
+}
+'''));
+
+CurrentWeatherResponse mockedCurrentWeatherResponse = CurrentWeatherResponse.fromJson(jsonDecode('''
+{
+   "coord":{
+      "lon":139,
+      "lat":35
+   },
+   "weather":[
+      {
+         "id":501,
+         "main":"Rain",
+         "description":"moderate rain",
+         "icon":"10n"
+      }
+   ],
+   "base":"stations",
+   "main":{
+      "temp":292.12,
+      "feels_like":292.58,
+      "temp_min":291.6,
+      "temp_max":294.51,
+      "pressure":1011,
+      "humidity":96
+   },
+   "visibility":169,
+   "wind":{
+      "speed":0.89,
+      "deg":63,
+      "gust":3.58
+   },
+   "rain":{
+      "1h":2.61
+   },
+   "clouds":{
+      "all":100
+   },
+   "dt":1625076738,
+   "sys":{
+      "type":2,
+      "id":2019346,
+      "country":"JP",
+      "sunrise":1625081606,
+      "sunset":1625133712
+   },
+   "timezone":32400,
+   "id":1851632,
+   "name":"Shuzenji",
+   "cod":200
+}
+  '''));
